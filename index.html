@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="UTF-8" />
+
+    <title>Assignment#1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style media="only screen"></style>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; height: 100%;">
+        <div style="margin: 10px 0;"><button onclick="onBtnUpdate()">Show text</button>
+            <button onclick="onBtnExport()">Download Data</button>
+            <button class="hide__btn">Hide Column</button>
+            <button class="show__btn">Show Column</button>
+        </div>
+        <div style=" flex: 1 1 0; position: relative;">
+        </div>
+        <div id="gridContainer">
+            <div id="myGrid" style="width: 100%; height: 100%; display: block;" class="ag-theme-alpine">
+            </div>
+        </div>
+        <textarea id="csvResult">Click the Show Button to see the data. </textarea>
+        <script>var __basePath = './';
+        </script>
+        <script src="https://unpkg.com/@ag-grid-enterprise/all-modules@25.3.0/dist/ag-grid-enterprise.min.js"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
